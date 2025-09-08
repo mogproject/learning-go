@@ -33,7 +33,7 @@ def main(args):
 
         program_name = os.path.basename(p)
 
-        os.mkdir(module_dir)
+        os.makedirs(module_dir)
         with open(os.path.join(module_dir, f'{program_name}.go'), 'w') as f:
             f.write('\n'.join([
                     'package main\n',
